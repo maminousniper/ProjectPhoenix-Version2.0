@@ -20,6 +20,10 @@ To get started follow the steps below:
     4. Play!
     
 *Make sure you have Onesync* ***legacy*** *or* ***infinity*** *enabled (through txAdmin if you are using it) otherwise your server won't work.*
+
+## Assets
+Assets are now seperate to the main repo! you need to download them from here then place them into your server! Without this the server will not function correctly.
+https://github.com/Rhodiniium/RoyalRP-Assets
  
    
 
