@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.lester-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #202731;
+    overflow: hidden;
+}
+
+.lester-header {
+    position: relative;
+    width: 84%;
+    height: 10vh;
+    background-color: #4b5868;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 1vh .15vh rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.lester-header-name {
+    position: absolute;
+    margin: 1.5vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.lester-header-progress {
+    position: absolute;
+    width: 90%;
+    height: 1.2vh;
+    background-color: #181c20;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 2.5vh;
+    border-radius: 1vh;
+}
+
+.lester-header-progress-text {
+    font-size: .8vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 1.8vh .75vh 0 .6vh;
+}
+
+.lester-header-progress-fill-moneywash {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(243, 197, 106);
+    border-radius: 1vh;
+}
+.lester-header-progress-fill-storerobbery {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(243, 197, 106);
+    border-radius: 1vh;
+}
+.lester-header-progress-fill-moneystorm {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(243, 197, 106);
+    border-radius: 1vh;
+}
+
+.lester-header-currentlevel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5vh;
+    height: 5vh;
+    background-color: #536070;
+    border-radius: 50%;
+    margin: 1.5vh;
+    box-shadow: 0 0 .5vh .1vh rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(236, 236, 236);
+    font-size: 1.5vh;
+}
+
+.lester-header-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+
+    margin: 1vh;
+}
+
+#lester-header-tier-moneywash {
+    float: right;
+    color: rgba(255, 255, 255, 0.9);
+}
+#lester-header-tier-storerobbery {
+    float: right;
+    color: rgba(255, 255, 255, 0.9);
+}
+#lester-header-tier-moneystorm {
+    float: right;
+    color: rgba(255, 255, 255, 0.9);
+}

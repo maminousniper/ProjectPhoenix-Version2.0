@@ -1,0 +1,18 @@
+{
+    "market_takemoney": "You must take all or none of the money.",
+    "farmers_market": "Farmers Market",
+    "farming": "Farming",
+    "place": "Place",
+    "cancel": "Cancel",
+    "plants": "Plants",
+    "harvest": "Harvest",
+    "no_water": "You don't have any water!",
+    "harvesting_plant": "Harvesting plant",
+    "watering_plant": "Watering plant",
+    "planting_seed": "Planting seed",
+    "harvest_plant": "Harvest plant",
+    "sell_items": "Sell items",
+    "view_stock": "View stock",
+    "add_water": "Add water",
+    "place_seed": "Place seed"
+}

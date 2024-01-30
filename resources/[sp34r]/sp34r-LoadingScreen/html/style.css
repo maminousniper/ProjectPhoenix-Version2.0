@@ -1,0 +1,168 @@
+#Container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0vh;
+  left: 0vh;
+  overflow: hidden;
+}
+
+.ImageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0vh;
+  left: 0vh;
+  background: radial-gradient(circle, rgba(255, 23, 23, 0.329) 0%, rgba(0, 10, 1, 0.541) 20%);
+}
+
+.LoppedImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0vh;
+  left: 0vh;
+  background: url('./assets/background.png') repeat-x;
+  background-repeat: repeat;
+  animation: animatedBackground 2000s linear infinite;
+  filter: brightness(75%)
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 4vh;
+  left: 0vh;
+  bottom: 13vh;
+  color: white;
+  font-size: 4vh;
+  font-family: 'Bakbak One';
+  text-align: center;
+  text-shadow: 0vh 0vh 0.2vh black;
+}
+
+.serverIcon {
+  position: relative;
+  display: block;
+  width: 30vh;
+  height: 30vh;
+  top: 35vh;
+  margin: auto;
+  -webkit-filter: drop-shadow(0vh 0vh 0.2vh black);
+  filter: drop-shadow(0vh 0vh 0.2vh black);
+}
+
+.ProgressBar {
+  position: absolute;
+  width: 100%;
+  height: 0.5vh;
+  left: 0vh;
+  bottom:0vh;
+  background-color: rgb(0, 2, 24);
+}
+
+.Progress {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0vh;
+  bottom:0vh;
+  background-color: #ff1717f3;
+  box-shadow: 0vh 0vh 1vh #ff1717f3;
+}
+
+.PausePlay {
+  left: 30px;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #ff1717f3;
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px #ff1717f3;
+  z-index: 10;
+}
+
+.PausePlay:hover {
+  background-color: #85c6d6;
+  box-shadow: 0px 0px 10px #85c6d6;
+}
+
+.PausePlay:hover + .SongTitle {
+  display:inline-block;
+  animation-name: SongShow;
+  animation-duration: 1s;
+}
+
+.MusicImg {
+  position: relative;
+  top: 7px;
+  left: 7px;
+  width: 35px;
+  height: 35px;
+  user-select: none;
+  z-index: 11;
+}
+
+.dot-flashing {
+  position: absolute;
+  bottom: 8.7vh;
+  right: 78vh;
+  width: 0.5vh;
+  height: 0.5vh;
+  border-radius: 5px;
+  background-color: #ff1717f3;
+  color: #ff1717f3;
+  animation: dot-flashing 0.5s infinite linear alternate;
+  animation-delay: 0.25s;
+}
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-flashing::before {
+  left: -0.8vh;
+  width: 0.5vh;
+  height: 0.5vh;
+  border-radius: 5px;
+  background-color: #ff1717f3;
+  color: #ff1717f3;
+  animation: dot-flashing 0.5s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 0.8vh;
+  width: 0.5vh;
+  height: 0.5vh;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  animation: dot-flashing 0.5s infinite alternate;
+  animation-delay: 0.5s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #ff1717f3;
+  }
+  50%, 100% {
+    background-color: rgba(128, 172, 255, 0.2);
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px -10000px;
+  }
+}
+
+@keyframes SongShow {
+  0%  { left: 3vh; width: 0vh;}
+  100% {left: 10vh; width: 50vh;}
+}

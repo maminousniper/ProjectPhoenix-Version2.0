@@ -1,0 +1,1 @@
+ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `model` varchar(50) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci';
